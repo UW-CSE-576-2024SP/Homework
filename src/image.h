@@ -85,13 +85,13 @@ image make_emboss_filter();
 image make_gaussian_filter(float sigma);
 image make_gx_filter();
 image make_gy_filter();
-void normalize_image(image im);
+void feature_normalize(image im);
 void l1_normalize(image im);
-void threshold_image(image im, float thresh);
 image *sobel_image(image im);
 image colorize_sobel(image im);
 image smooth_image(image im, float sigma);
 image apply_median_filter(image im, int kernel_size);
+image apply_bilateral_filter(image im, float sigma1, float sigma2);
 
 // Harris and Stitching
 image structure_matrix(image im, float sigma);
@@ -99,7 +99,7 @@ image cornerness_response(image S);
 point make_point(float x, float y);
 descriptor make_descriptor(image im, int i);
 point project_point(matrix H, point p);
-matrix compute_homography(match *matches, int mn, int n);
+matrix compute_homography(match *matches, int n);
 int model_inliers(matrix H, match *m, int n, float thresh);
 image combine_images(image a, image b, matrix H);
 match *match_descriptors(descriptor *a, int an, descriptor *b, int bn, int *mn);
@@ -172,4 +172,3 @@ void save_matrix(matrix m, const char *fname);
 }
 #endif
 #endif
-
