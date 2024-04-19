@@ -11,7 +11,7 @@ int main(int argc, char **argv)
     } else if (0 == strcmp(argv[1], "test")){
         if (0 == strcmp(argv[2], "hw1")) test_hw1();
         if (0 == strcmp(argv[2], "hw2")) test_hw2();
-        // if (0 == strcmp(argv[2], "hw3")) test_hw3();
+        if (0 == strcmp(argv[2], "hw3")) test_hw3();
         // if (0 == strcmp(argv[2], "hw4")) test_hw4();
         // if (0 == strcmp(argv[2], "hw5")) test_hw5();
     }
