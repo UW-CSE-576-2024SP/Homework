@@ -2,10 +2,10 @@ OPENCV=0
 OPENMP=0
 DEBUG=0
 
-OBJ=load_image.o process_image.o args.o test.o modify_image.o harris_image.o panorama_image.o matrix.o
+OBJ=load_image.o process_image.o args.o test.o modify_image.o harris_image.o panorama_image.o matrix.o classifier.o data.o list.o
 EXOBJ=main.o
 
-VPATH=./src/:./:./src/hw1:./src/hw2:./src/hw3
+VPATH=./src/:./:./src/hw1:./src/hw2:./src/hw3:./src/hw4
 SLIB=visionlib.so
 ALIB=visionlib.a
 EXEC=main
