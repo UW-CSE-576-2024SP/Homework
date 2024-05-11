@@ -1,4 +1,4 @@
-# CSE 455 Homework 5
+# CSE 576 Homework 5
 
 Welcome, it's time for convolutional neural networks! Needless to say, run
 
